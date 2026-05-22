@@ -1,0 +1,46 @@
+<form name="f1">
+Enroll <input id="t1"> <br><br>
+Name <input id="t2"> <br><br>
+Section <input id="t3"> <br><br>
+PHONE no. <input id="t4"> <br><br>
+Age <input id="t5"> <br><br>
+Adhaar no. <input id="t5"> <br><br>
+Adress no. <input id="t6"> <br><br>
+sibling <input id="t7"> <br><br>
+Branch:<br>
+<input type="checkbox" name="branch" value="CSE"> CSE
+<input type="checkbox" name="branch" value="ECE"> ECE
+<input type="checkbox" name="branch" value="ME"> ME
+<input type="checkbox" name="branch" value="Civil"> Civil
+<br><br>
+Gender:<br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<br><br>
+<input type="button" value="Register" onclick="xyz()">
+<div id="d1"></div>
+</form>
+<script>
+function xyz() {
+a = t1.value;
+b = t2.value;
+c = t3.value;
+d = t4.value;
+e = t5.value;
+f = t6.value;
+g = t7.value;
+
+str = "Enrollment : " + a;
+str += "<br>Name : " + b;
+str += "<br>section : " + c;
+str += "<br>PHONE no. : " + d;
+str += "<br>age : " + e;
+str += "<br>Adhaar no. : " + f;
+str += "<br>Adress no. : " + e;
+str += "<br>sibling : " + g;
+
+
+d1.innerHTML=str;
+}
+</script>
